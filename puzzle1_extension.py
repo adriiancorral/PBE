@@ -18,8 +18,8 @@ try:
         screen.display_string(f"  {date} {time}", 2)
         #IP
         screen.display_string("IP Adress:", 3)
-        ip_adress = check_output(['hostname', '-I']).decode("utf-8").strip()
-        screen.display_string(f"  {ip_adress}", 4)
+        ip_adress = check_output(['hostname', '-I']).decode("utf-8").strip()    # .decode to convert bytes to string
+        screen.display_string(f"  {ip_adress}", 4)                              # .strip to erase \n
         #Counter to end the script
         counter = counter + 1
         if counter == 200:
