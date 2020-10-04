@@ -12,8 +12,8 @@ try:
     screen.clear()
     while 1:
         #Date & Time
-        date = strftime("%x")
-        time = strftime("%X")
+        date = strftime("%x")   # to obtain the date as a string
+        time = strftime("%X")   # to obtain the time as a string
         screen.display_string("Date & Time:", 1)
         screen.display_string(f"  {date} {time}", 2)
         #IP
