@@ -129,7 +129,7 @@ class lcd:
  
     for char in centered_string:
       self.write(ord(char), Rs)
-
+  
   def clear(self):
     """clear lcd and set to home"""
     self.write(LCD_CLEARDISPLAY)
