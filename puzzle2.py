@@ -15,7 +15,7 @@ class MyWindow(Gtk.Window):
         self.set_border_width(8)
         self.set_default_size(200, 50)
         # CSS
-        css = b'* { background-color: #000000; color: #ffff00} button {color: #ffffff; }'
+        css = b'* {background-color: #000000; color: #ffff00} button {color: #ffffff; }'
         css_provider = Gtk.CssProvider()
         css_provider.load_from_data(css)
         context = Gtk.StyleContext()
